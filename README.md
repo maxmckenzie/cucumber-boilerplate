@@ -1,11 +1,4 @@
-# Additional edits from fork
-
-- jslint replaced with eslint and style guide so y'all need to do this if npm install dont work `npm install eslint-plugin-import eslint eslint-airbnb-base -g`
-
-==== original readme ====
-
-Cucumber Boilerplate [![Build Status](https://travis-ci.org/webdriverio/cucumber-boilerplate.svg?branch=master)](https://travis-ci.org/webdriverio/cucumber-boilerplate)
-====================
+Cucumber Boilerplate 
 
 Boilerplate project to run WebdriverIO tests with Cucumber. It is based on a framework called
 [yadda](https://github.com/acuminous/yadda) and brings **true** [BDD](http://en.wikipedia.org/wiki/Behavior-driven_development)
@@ -17,8 +10,8 @@ of your product development.
 
 Choose one of the following options:
 
-1. Download the latest stable release [here](https://github.com/webdriverio/cucumber-boilerplate/archive/master.zip) or
-2. Clone the git repo — `git clone https://github.com/webdriverio/cucumber-boilerplate.git`
+1. Download the latest stable release [here](https://github.com/maxmckenzie/cucumber-boilerplate/archive/master.zip) or
+2. Clone the git repo — `git clone https://github.com/maxmckenzie/cucumber-boilerplate.git`
 
 Then just embed the test directory into the root folder of your project and copy/install the [necessary dependencies
 from the package.json](https://github.com/webdriverio/cucumber-boilerplate/blob/master/package.json#L26-L31)
