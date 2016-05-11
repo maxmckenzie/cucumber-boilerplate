@@ -64,6 +64,8 @@ exports.config = {
         reporter: 'spec',
         timeout: 10000,
         require: 'chai',
+        watch: './test/steps',
+        'watch-extensions': 'js,feature',
         compilers: ['js:babel-core/register'],
     }
 };
