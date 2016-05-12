@@ -1,7 +1,6 @@
 var WebdriverIO = require('webdriverio'),
     merge = require('deepmerge'),
     config = require('../support/configure'),
-    babel = require('babel/register'),
     BeforeHook;
 
 BeforeHook = module.exports = function (done) {
