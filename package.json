@@ -41,6 +41,7 @@
     "yadda": "~0.16.0"
   },
   "devDependencies": {
+    "eslint-plugin-import": "^1.8.0",
     "phantomjs": "1.9.19",
     "selenium-standalone": "4.8.0"
   }

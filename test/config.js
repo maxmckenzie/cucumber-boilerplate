@@ -11,7 +11,7 @@ exports.config = {
    */
   selenium: {
     host: '127.0.0.1',
-    port: 4444
+    port: 4444,
   },
 
   /**
@@ -30,21 +30,21 @@ exports.config = {
    *   default: 500
    */
   options: {
-    logLevel: 'silent'
+    logLevel: 'silent',
   },
 
   /**
    * desired capabilities
    */
   capabilities: {
-    browserName: 'chrome'
+    browserName: 'chrome',
   },
 
   /**
    * location of feature files
    */
   featureFiles: [
-    'test/features/**/*.feature'
+    'test/features/**/*.feature',
   ],
 
   /**
@@ -53,7 +53,7 @@ exports.config = {
    * - baseUrl: sets base url for `Given I open the site "/some/url.html"`
    */
   env: {
-    baseUrl: 'http://127.0.0.1:8080'
+    baseUrl: 'http://127.0.0.1:8080',
   },
 
   /**
@@ -67,5 +67,5 @@ exports.config = {
     watch: './test/steps',
     'watch-extensions': 'js,feature',
     compilers: ['js:babel-core/register'],
-  }
+  },
 };
