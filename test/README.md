@@ -1,6 +1,6 @@
 # Cucumber Boilerplate git submodule
 
-> NOte this is now done with subrepo https://github.com/ingydotnet/git-subrepo docs to follow
+> Note this is now done with subrepo https://github.com/ingydotnet/git-subrepo docs to follow
 
 This repository is a copy of the cucumber boilerplate `tests` directory.
 

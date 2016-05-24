@@ -8,7 +8,9 @@
     "postinstall": "selenium-standalone install",
     "selenium-server": "selenium-standalone start",
     "phantomjs": "phantomjs",
-    "lint": "eslint demo-app/ test/"
+    "lint": "eslint demo-app/ test/",
+    "local-webserver": "http-server ./demo-app",
+    "test": "concurrently --raw 'npm run local-webserver' './test/run.js'"
   },
   "repository": {
     "type": "git",
@@ -41,7 +43,9 @@
     "yadda": "~0.16.0"
   },
   "devDependencies": {
+    "concurrently": "^2.1.0",
     "eslint-plugin-import": "^1.8.0",
+    "http-server": "0.8.5",
     "phantomjs": "1.9.19",
     "selenium-standalone": "4.8.0"
   }
