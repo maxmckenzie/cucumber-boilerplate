@@ -1,16 +1,16 @@
 #!/usr/bin/env node
-'use strict';
+
 /**
  * wrapper arround mocha cmd
  * figures out options and calls mocha with desired arguments
  */
 
-const spawn = require('child_process').spawn;
-const path = require('path');
-const args = [path.join(__dirname, '..', 'node_modules', 'mocha', 'bin', '_mocha')];
-const config = require('./config').config;
-let flag;
-let proc;
+var spawn = require('child_process').spawn,
+  path = require('path'),
+  args = [path.join(__dirname, '..', 'node_modules', 'mocha', 'bin', '_mocha')],
+  config = require('./config').config,
+  flag,
+  proc;
 
 /**
  * execute init script with mocha
@@ -26,6 +26,8 @@ for (flag in (config.mochaOpts || {})) {
 }
 
 process.argv.slice(2).forEach((arg) => {
+  var flag;
+
   /**
    * set mocha specific args
    */
