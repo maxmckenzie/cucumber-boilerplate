@@ -4,17 +4,17 @@ module.exports = function (elem, falseCase, className, done) {
   falseCase = (falseCase === 'does not have') ? true : false;
 
   this.browser
-    .getAttribute(elem, 'className')
-    .then((classes) => {
-      classes = classes.split(' ');
+  .getAttribute(elem, 'className')
+  .then((classes) => {
+    classes = classes.split(' ');
 
-      if (falseCase) {
-        expect(classes).to.not.include(className, 'Element ' + elem + ' should not have the class ' + className);
-      } else {
-        expect(classes).to.include(className, 'Element ' + elem + ' should have the class ' + className);
-      }
+    if (falseCase) {
+    expect(classes).to.not.include(className, 'Element ' + elem + ' should not have the class ' + className);
+    } else {
+    expect(classes).to.include(className, 'Element ' + elem + ' should have the class ' + className);
+    }
 
-      return this;
-    })
-    .call(done);
+    return this;
+  })
+  .call(done);
 };

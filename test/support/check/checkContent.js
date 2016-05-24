@@ -3,23 +3,23 @@
  */
 
 module.exports = function (type, element, falseCase, origText, done) {
-    var command = (type !== 'inputfield') ? 'getText' : 'getValue';
+  const command = (type !== 'inputfield') ? 'getText' : 'getValue';
 
-    // Check for empty element
-    if (!done && typeof origText === 'function') {
-        done = origText;
-        origText = '';
+  // Check for empty element
+  if (!done && typeof origText === 'function') {
+    done = origText;
+    origText = '';
 
-        falseCase = !falseCase;
-    }
+    falseCase = !falseCase;
+  }
 
-    this.browser[command](element)
-        .then(function (text) {
-            if (falseCase) {
-                origText.should.not.equal(text);
-            } else {
-                origText.should.equal(text);
-            }
-        })
-        .call(done);
+  this.browser[command](element)
+    .then((text) => {
+      if (falseCase) {
+        origText.should.not.equal(text);
+      } else {
+        origText.should.equal(text);
+      }
+    })
+    .call(done);
 };
