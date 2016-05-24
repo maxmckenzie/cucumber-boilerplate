@@ -5,7 +5,7 @@
 module.exports = function (element, falseCase, done) {
   this.browser
     .isVisible(element)
-    .then(function (visible) {
+    .then((visible) => {
       if (falseCase) {
         visible.should.not.equal(true, 'expected element "' + element + '" not to be visible');
       } else {
